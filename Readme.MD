@@ -1,0 +1,3 @@
+- Swagger : http://localhost:8080/swagger-ui/index.html
+- REST : https://www-bezkoder-com.translate.goog/spring-boot-jpa-crud-rest-api/?_x_tr_sl=auto&_x_tr_tl=fr&_x_tr_hl=fr
+- 
