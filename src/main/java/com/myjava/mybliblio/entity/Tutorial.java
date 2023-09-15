@@ -1,14 +1,14 @@
 package com.myjava.mybliblio.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.Setter;
 
-@Data
 @Entity
-@NoArgsConstructor @AllArgsConstructor
+@Getter @Setter
+@NoArgsConstructor
 @Table(name = "tutorials")
 public class Tutorial {
 
@@ -26,6 +26,13 @@ public class Tutorial {
     private boolean published;
 
     public Tutorial(String title, String description, boolean published) {
+        this.title = title;
+        this.description = description;
+        this.published = published;
+    }
 
+    @Override
+    public String toString() {
+        return "Tutorial [id=" + id + ", title=" + title + ", desc=" + description + ", published=" + published + "]";
     }
 }
